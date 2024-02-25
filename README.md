@@ -1,3 +1,3 @@
 # Friday-Proj-4
 
-I have added all of the files.
+# I will be using generative AI (ChatGPT) to improve my last three Friday Projects.
