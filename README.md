@@ -58,3 +58,59 @@ print(story):
 mad_lib():
     Calls the mad_lib() function to start the execution of the Mad Lib game.
 
+# Powerball_FP2:
+a project in which a user can accept or decline a PowerBall number generation
+
+import random
+    This line imports the random module, which provides functions for generating random numbers.
+
+def generate_powerball_numbers():
+    This line defines a function named generate_powerball_numbers that will generate PowerBall numbers.
+
+white_balls = [str(random.randint(1, 69)) for _ in range(5)]
+    This line generates a list comprehension to create a list of five random white ball numbers between 1 and 69.
+    Each number is converted to a string using str() because the final output requires strings.
+    The loop runs five times (range(5)), generating a random number each time.
+
+red_ball = str(random.randint(1, 26))
+    This line generates a random number for the red ball between 1 and 26 and converts it to a string.
+
+powerball_numbers = '  '.join(white_balls) + '    ' + red_ball
+    This line joins the white ball numbers into a single string separated by two spaces using the join() method.
+    Four spaces are added after the white ball numbers and then concatenated with the red ball number.
+
+return powerball_numbers
+    This line returns the generated PowerBall numbers as a string.
+
+def main():
+    This line defines the main function of the program.
+
+print("Welcome to the PowerBall number generator!")
+    This line prints a greeting message to welcome the user.
+
+response = input("Would you like some PowerBall numbers? (yes/no): ").lower()
+    This line prompts the user with a question and waits for their response, which is converted to lowercase using the lower() method.
+
+if response == 'yes':
+    This line checks if the user's response is 'yes'.
+
+powerball_numbers = generate_powerball_numbers()
+    This line calls the generate_powerball_numbers() function to generate the PowerBall numbers.
+
+print("Your PowerBall numbers are:", powerball_numbers)
+    This line prints out the generated PowerBall numbers.
+
+else:
+    This line handles the case where the user's response is not 'yes'.
+
+print("Okay, maybe next time!")
+    This line prints a message indicating that the user declined to get PowerBall numbers.
+
+print("Thank you for using the PowerBall number generator. Goodluck!")
+    This line prints a farewell message to the user.
+
+if __name__ == "__main__":
+    This line checks if the script is being run directly as the main program.
+
+main()
+    This line calls the main() function if the script is being run directly.
