@@ -59,7 +59,7 @@ mad_lib():
     Calls the mad_lib() function to start the execution of the Mad Lib game.
 
 # Powerball_FP2:
-a project in which a user can accept or decline a PowerBall number generation
+a project in which a user can accept or decline a PowerBall number generation.
 
 import random
     This line imports the random module, which provides functions for generating random numbers.
@@ -114,3 +114,35 @@ if __name__ == "__main__":
 
 main()
     This line calls the main() function if the script is being run directly.
+
+# QuizBowl_FP3
+a project in which a user can play a game of QuizBowl.
+
+trivia_questions = {
+    "What is the capital of France?": "Paris",
+    "Who wrote 'Romeo and Juliet'?": "William Shakespeare",
+    "What is the chemical symbol for water?": "H2O",
+    "Which planet is known as the Red Planet?": "Mars",
+    "Who painted the Mona Lisa?": "Leonardo da Vinci"
+}
+This block of code defines a dictionary named trivia_questions where keys represent trivia questions and values represent their corresponding answers.
+
+for question, answer in trivia_questions.items():
+    This line starts a for loop that iterates over each key-value pair in the trivia_questions dictionary. The items() method is used to retrieve both the keys and values during each iteration.
+
+print(question)
+    This line prints the current question to the user.
+
+user_answer = input("Your answer: ")
+    This line prompts the user to input their answer and stores it in the variable user_answer.
+
+if user_answer.lower() == answer.lower():  # Case insensitive comparison
+    This line checks if the user's answer matches the correct answer. The lower() method is used to convert both the user's answer and the correct answer to lowercase for case-insensitive comparison.
+
+    print("Correct!")
+else:
+    print("Incorrect. The correct answer is:", answer)
+        These lines provide feedback to the user based on whether their answer is correct or incorrect. If the answers match, "Correct!" is printed. Otherwise, "Incorrect. The correct answer is:" followed by the correct answer is printed.
+
+print()  # Print an empty line for better readability
+    This line prints an empty line to create space between questions for better readability in the output. It is outside the loop to ensure it only prints once after each question.
