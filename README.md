@@ -139,9 +139,9 @@ user_answer = input("Your answer: ")
 if user_answer.lower() == answer.lower():  # Case insensitive comparison
     This line checks if the user's answer matches the correct answer. The lower() method is used to convert both the user's answer and the correct answer to lowercase for case-insensitive comparison.
 
-    print("Correct!")
+print("Correct!")
 else:
-    print("Incorrect. The correct answer is:", answer)
+print("Incorrect. The correct answer is:", answer)
         These lines provide feedback to the user based on whether their answer is correct or incorrect. If the answers match, "Correct!" is printed. Otherwise, "Incorrect. The correct answer is:" followed by the correct answer is printed.
 
 print()  # Print an empty line for better readability
