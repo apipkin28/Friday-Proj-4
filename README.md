@@ -1,5 +1,6 @@
 # Friday-Proj-4
 I will be using generative AI (ChatGPT) to improve my last three Friday Projects.
+Listed below are the comments provided by ChatGPT per each line of code.
 
  # FP1_Madlib:
  a project in which a user will respond to prompts and be given a wacky story in return.
